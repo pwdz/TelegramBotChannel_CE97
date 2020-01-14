@@ -40,8 +40,7 @@ public class MyBot extends TelegramLongPollingBot {
             logger.info(""+update.getMessage()+"\n");
             SendMessage message = new SendMessage() // Create a SendMessage object with mandatory fields
                     .setChatId(update.getMessage().getChatId())
-                    .setText("پیام شما برای ادمین ارسال شد ✅" +
-                            "\n"+"در اسرع وقت به پیام شما پاسخ داده خواهد شد.");
+                    .setText("Your message is sent to the admins✅\n we will answer you as soon as possible");
             try {
                 execute(message); // Call method to send the message
             } catch (TelegramApiException e) {
@@ -52,12 +51,10 @@ public class MyBot extends TelegramLongPollingBot {
 
     public String getBotUsername() {
         return botUserName;
-//        return "pwd_obot";
     }
 
     public String getBotToken() {
         return botToken;
-//                "1039225796:AAFemDsfWTSKnI-nmILaz-SEazPqOE2cthk";
     }
     private String getChatId()
     {
@@ -66,8 +63,6 @@ public class MyBot extends TelegramLongPollingBot {
     private void sendMessageToChannel(Message message) {
         String urlString = TelegramAPIPath;
 
-//        String apiToken = getBotToken();
-//        String chatId = "-1001466448736";
         String userMsg = message.getText();
         userMsg = userMsg.replaceAll("\\n","%0D%0A");
 

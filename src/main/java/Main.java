@@ -9,9 +9,7 @@ public class Main {
         //Instantiate Telegram Bots API
         TelegramBotsApi botsApi = new TelegramBotsApi();
         try {
-            botsApi.registerBot(new Pwd_obot("pwd_obot","1039225796:AAFemDsfWTSKnI-nmILaz-SEazPqOE2cthk"));
-//            botsApi.registerBot(new MyBot("CE97_Adminbot","904554452:AAHBrHUGvIYUiDK-dv1I-ce1AYfPV2hPN9E","-1001466448736"));
-//            botsApi.registerBot(new CE97Bot());
+            botsApi.registerBot(new MyBot("myBotUsername","myBotToken","myChatId"));
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
