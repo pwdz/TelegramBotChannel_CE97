@@ -13,7 +13,7 @@ message 😂 message 😆 message 😱
 message message message 😶.
 ```
   
-##Usage
+## Usage
 1. Create a bot using [**BotFather**](https://t.me/botfather).  
 2. Add your bot to your channel and give it administrator permissions.  
 3. Clone project and import it using Maven.   
@@ -23,7 +23,7 @@ botsApi.registerBot(new MyBot("myBotUsername","myBotToken","myChatId"));
 ```
 Run the program! :)
 
-###Resources
+### Resources
 [Bots: An introduction for developers](https://core.telegram.org/bots)  
 [Telegram Bot API](https://core.telegram.org/bots/api)  
 [Sending a message to a Telegram channel](https://medium.com/@xabaras/sending-a-message-to-a-telegram-channel-the-easy-way-eb0a0b32968)
