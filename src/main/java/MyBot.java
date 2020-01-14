@@ -35,17 +35,25 @@ public class MyBot extends TelegramLongPollingBot {
 
     public void onUpdateReceived(Update update) {
         // We check if the update has a message and the message has text
-        if (update.hasMessage() && update.getMessage().hasText() && !update.getMessage().getText().equals("/start")) {
-            sendMessageToChannel(update.getMessage());
-            logger.info(""+update.getMessage()+"\n");
-            SendMessage message = new SendMessage() // Create a SendMessage object with mandatory fields
-                    .setChatId(update.getMessage().getChatId())
-                    .setText("Your message is sent to the admins✅\n we will answer you as soon as possible");
+        if (update.hasMessage() && update.getMessage().hasText()) {
+            SendMessage message;
+            if(!update.getMessage().getText().equals("/start")){
+                sendMessageToChannel(update.getMessage());
+                logger.info("" + update.getMessage() + "\n");
+                message = new SendMessage() // Create a SendMessage object with mandatory fields
+                        .setChatId(update.getMessage().getChatId())
+                        .setText("پیام شما برای ادمین ارسال شد ✅" +
+                                "\n" + "در اسرع وقت به پیام شما پاسخ داده خواهد شد.");
+            }
+            else
+                message = new SendMessage().setChatId(update.getMessage().getChatId())
+                        .setText("سلام."+"\n"+"❇️ لطفا پیام خود را وارد نمایید."+"\n");
             try {
                 execute(message); // Call method to send the message
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
+
         }
     }
 
