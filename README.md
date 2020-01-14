@@ -12,6 +12,7 @@ There is also a java **Logger** that saves messages to a file.
 message 😂 message 😆 message 😱
 message message message 😶.
 ```
+  
 ##Usage
 1. Create a bot using [**BotFather**](https://t.me/botfather).  
 2. Add your bot to your channel and give it administrator permissions.  
@@ -21,6 +22,7 @@ message message message 😶.
 botsApi.registerBot(new MyBot("myBotUsername","myBotToken","myChatId"));
 ```
 Run the program! :)
+
 ###Resources
 [Bots: An introduction for developers](https://core.telegram.org/bots)  
 [Telegram Bot API](https://core.telegram.org/bots/api)  
