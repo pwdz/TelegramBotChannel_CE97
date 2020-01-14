@@ -4,7 +4,7 @@ When a user starts a chat with the bot, bot sends messages to a private channel 
 So admins can see messages without being in chat with user directly and can send answers to users. 
 There is also a java **Logger** that saves messages to a file.
   
-####Format of the PM's
+### Format of the PM's
 ```
 [username]: @username
 [firstname]: Jack
