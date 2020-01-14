@@ -28,3 +28,7 @@ Run the program! :)
 [Bots: An introduction for developers](https://core.telegram.org/bots)  
 [Telegram Bot API](https://core.telegram.org/bots/api)  
 [Sending a message to a Telegram channel](https://medium.com/@xabaras/sending-a-message-to-a-telegram-channel-the-easy-way-eb0a0b32968)
+
+## Yet to come
+- Ability of answering users using the bot and queries
+- sending stickers, images, Gifs and ...
