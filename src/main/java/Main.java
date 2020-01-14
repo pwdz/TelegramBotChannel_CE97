@@ -6,20 +6,12 @@ public class Main {
     public static void main(String[] args) {
         //Initialize Api Context
         ApiContextInitializer.init();
-        System.out.println("fuck1");
         //Instantiate Telegram Bots API
         TelegramBotsApi botsApi = new TelegramBotsApi();
-
-        System.out.println("fuck2");
         try {
-            botsApi.registerBot(new Pwd_obot());
-            
-//            telegramBotsApi.registerBot(new ChannelHandlers());
-//            telegramBotsApi.registerBot(new DirectionsHandlers());
-//            telegramBotsApi.registerBot(new RaeHandlers());
-//            telegramBotsApi.registerBot(new WeatherHandlers());
-//            telegramBotsApi.registerBot(new TransifexHandlers());
-//            telegramBotsApi.registerBot(new FilesHandlers());
+            botsApi.registerBot(new Pwd_obot("pwd_obot","1039225796:AAFemDsfWTSKnI-nmILaz-SEazPqOE2cthk"));
+//            botsApi.registerBot(new MyBot("CE97_Adminbot","904554452:AAHBrHUGvIYUiDK-dv1I-ce1AYfPV2hPN9E","-1001466448736"));
+//            botsApi.registerBot(new CE97Bot());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
