@@ -31,4 +31,6 @@ Run the program! :)
 
 ## Yet to come
 - Ability of answering users using the bot and queries
-- sending stickers, images, Gifs and ...
+- Sending stickers, images, Gifs and ... via bot
+- Alerting when a message is edited by user
+- Deleting a message that a user has deleted in chat with bot
