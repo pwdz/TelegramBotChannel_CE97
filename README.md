@@ -30,7 +30,7 @@ Run the program! :)
 [Sending a message to a Telegram channel](https://medium.com/@xabaras/sending-a-message-to-a-telegram-channel-the-easy-way-eb0a0b32968)
 
 ## Yet to come
-- Ability of answering users using the bot and queries
+- Ability of answering users using the bot and inline queries
 - Sending stickers, images, Gifs and ... via bot
 - Alerting when a message is edited by user
 - Deleting a message that a user has deleted in chat with bot
