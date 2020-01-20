@@ -6,10 +6,10 @@ There is also a java **Logger** that saves messages to a file.
   
 ### Format of the PM's
 ```
-[username]: @username
-[firstname]: Jack
-[lastname]: Majidi
-[JackMajidi says]:
+@username
+firstname lastname
+Thu Jan 16 15:00:00 EST 2020
+[PM]:
 message 😂 message 😆 message 😱
 message message message 😶.
 ```
