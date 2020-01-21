@@ -2,9 +2,9 @@
 This is a **Telegram bot** that is used as an admin of a channel.  
 When a user starts a chat with the bot, bot sends messages to a private channel that all the admins of channel are there.  
 So admins can see messages without being in chat with user directly and can send answers to users. 
-There is also a java **Logger** that saves messages to a file.
-  
-### Format of the PM's
+There is also a java **Logger** that saves messages to a file.  
+Bot id: ``@CE97_Adminbot``
+## Format of the PM's
 ```
 @username
 firstname lastname
